@@ -3,8 +3,6 @@ package test;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,10 +13,10 @@ public class BaseRanner {
 
 	@Before
 	public void setUp(){
-		/*System.setProperty("webdriver.gecko.driver", "C:\\BrowsersDrivers\\Mozilla Firefox\\geckodriver.exe");
-		driver = new FirefoxDriver();*/
-		System.setProperty("webdriver.chrome.driver", "C:\\BrowsersDrivers\\Google Chrome 73\\chromedriver.exe");
-		driver = new ChromeDriver();
+		String driverName;
+		if ((driverName = System.getProperty("browser")) == null)
+			driverName = "heh";
+		driver = BrowsersFactory.buildDriver(driverName);
 		baseUrl = "https://www.tinkoff.ru/career/vacancies/";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}

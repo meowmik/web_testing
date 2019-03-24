@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="test.FirstTest" time="13.318" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="test.FirstTest" time="20.119" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.2+9-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin"/>
+    <property name="browser" value="lol"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\Татьяна\Desktop\Tinkoff\web_testing"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -46,7 +47,7 @@
     <property name="java.class.path" value="C:\MAVEN\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=FirstTest verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=FirstTest -Dbrowser=lol verify"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.2"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -66,6 +67,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.FirstTest" name="testFirst" time="6.952"/>
-  <testcase classname="test.FirstTest" name="testSecond" time="6.366"/>
+  <testcase classname="test.FirstTest" name="testFirst" time="8.986"/>
+  <testcase classname="test.FirstTest" name="testSecond" time="11.133"/>
 </testsuite>
