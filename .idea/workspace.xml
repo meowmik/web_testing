@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8325e5b1-b729-41e2-822f-8dee979ef031" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseRanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseRanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BrowsersFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BrowsersFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseRanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/BaseRanner.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -59,6 +56,15 @@
                 <caret line="4" selection-start-line="4" selection-end-line="4" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -98,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/test/java/test/BrowsersFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/BaseRanner.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -128,43 +135,6 @@
               <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_testing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -174,7 +144,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553448507220" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553448942340" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-qa-training" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -253,7 +223,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553432264903</updated>
       <workItem from="1553432269035" duration="4424000" />
-      <workItem from="1553437615657" duration="8804000" />
+      <workItem from="1553437615657" duration="9425000" />
     </task>
     <servers />
   </component>
@@ -281,7 +251,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13228000" />
+    <option name="totallyTimeSpent" value="13849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -420,6 +390,13 @@
             <caret line="4" selection-start-line="4" selection-end-line="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
