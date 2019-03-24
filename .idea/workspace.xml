@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8325e5b1-b729-41e2-822f-8dee979ef031" name="Default Changelist" comment="" />
+    <list default="true" id="8325e5b1-b729-41e2-822f-8dee979ef031" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/FirstTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="228">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseRanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="92">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/target/surefire-reports/test.FirstTest.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -71,6 +75,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -78,8 +85,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/TestExample.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/Tests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/BaseRanner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/FirstTest.java" />
       </list>
     </option>
   </component>
@@ -95,6 +102,7 @@
     <option name="width" value="980" />
     <option name="height" value="1031" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -155,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553442492041" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553445154928" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-qa-training" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -234,7 +242,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553432264903</updated>
       <workItem from="1553432269035" duration="4424000" />
-      <workItem from="1553437615657" duration="3349000" />
+      <workItem from="1553437615657" duration="5581000" />
     </task>
     <servers />
   </component>
@@ -256,11 +264,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7773000" />
+    <option name="totallyTimeSpent" value="10005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15546559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -329,14 +336,14 @@
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/test.FirstTest.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseRanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="92">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -345,8 +352,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="228">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
