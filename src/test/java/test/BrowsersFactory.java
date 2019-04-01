@@ -4,17 +4,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 public class BrowsersFactory {
-	public static WebDriver buildDriver(String browserName){
-		switch (browserName){
-			case "google":
-				System.setProperty("webdriver.chrome.driver", "C:\\BrowsersDrivers\\Google Chrome 73\\chromedriver.exe");
+	public static WebDriver buildDriver(String driverName, String driverPath){
+		System.setProperty(driverName, driverPath);
+		switch (driverName) {
+			case "webdriver.chrome.driver":
 				return new ChromeDriver();
-			case "mazilla":
-				System.setProperty("webdriver.gecko.driver", "C:\\BrowsersDrivers\\Mozilla Firefox\\geckodriver.exe");
+			case "webdriver.gecko.driver":
 				return new FirefoxDriver();
 			default:
-				System.setProperty("webdriver.chrome.driver", "C:\\BrowsersDrivers\\Google Chrome 73\\chromedriver.exe");
+				//сюда не уходит, но надо было завершение сделать
 				return new ChromeDriver();
 		}
 	}

@@ -1,5 +1,3 @@
-mvn -Dtest=FirstTest -Dbrowser=mazilla verify
-mvn -Dtest=FirstTest -Dbrowser=google verify
-mvn -Dtest=FirstTest verify
-mvn -Dtest=FirstTest -Dbrowser=lol verify //уйдёт в дефолт
-по дефолту запускается в google 
+mvn -Dtest=Tests -Dbrowser=mazilla verify
+mvn -Dtest=Tests -Dbrowser=google verify
+mvn -Dtest=Tests verify //запускает google

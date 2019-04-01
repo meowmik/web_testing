@@ -4,7 +4,7 @@ import org.junit.*;
 import org.openqa.selenium.*;
 
 
-	public class Tests extends BaseRanner {
+	public class Tests extends BaseRunner {
 
 		@Test
 		public void testFirst(){
