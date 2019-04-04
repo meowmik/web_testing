@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -10,7 +11,9 @@ public class BrowsersFactory {
 		System.setProperty(driverName, driverPath);
 		switch (driverName) {
 			case "webdriver.chrome.driver":
-				return new ChromeDriver();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--disable-notifications");
+				return new ChromeDriver(options);
 			case "webdriver.gecko.driver":
 				return new FirefoxDriver();
 			default:
