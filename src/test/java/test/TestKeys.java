@@ -2,9 +2,7 @@ package test;
 
 import org.junit.Test;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.HashSet;
 import java.util.Set;
 import java.util.List;
@@ -44,30 +42,8 @@ public class TestKeys extends BaseRunner{
 		HashSet<String> windows = (HashSet<String>) driver.getWindowHandles();
 		driver.switchTo().window(windows.toArray()[0].toString());
 		driver.close();
-		/*if(!driver.getCurrentUrl().equals("https://www.tinkoff.ru/mobile-operator/tariffs/"))
-			System.out.println(123);
-		System.out.println("https://www.tinkoff.ru/mobile-operator/tariffs/");
-		System.out.println(driver.getCurrentUrl());*/
 	}
 
-	protected String cost(String xpath){
-		return driver.findElement(By.xpath(xpath)).getText();
-	}
-    protected void packageSelectoin (){
-		driver.findElement(By.xpath("//body//div[@class='UIFormWrapper__container_1TIK8']//div[@data-qa-file='UIFormWrapper']//div[@data-qa-file='UIFormWrapper']//div[2]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[2]")).click();
-		Actions actions1 = new Actions(driver);
-		actions1.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'Безлимитные минуты')]")))
-				.click()
-				.perform();
-		driver.findElement(By.xpath("//div[@class='ui-form__fieldset ui-form__fieldset_inline ui-form__fieldset_column-mob']//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[2]")).click();
-		Actions actions2 = new Actions(driver);
-		actions2.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'Безлимитный интернет')]")))
-				.click()
-				.perform();
-		driver.findElement(By.xpath("//div[@class='CheckboxSet__root_3OLWA']//div[2]//div[1]//div[1]//div[1]//div[1]//div[1]")).click();
-		driver.findElement(By.xpath("//div[@class='CheckboxSet__root_3OLWA']//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]")).click();
-
-	}
 
 	@Test
 	public void test2(){
@@ -81,44 +57,56 @@ public class TestKeys extends BaseRunner{
 				driver.findElement(By.xpath("//div[@class='MvnoRegionConfirmation__title_DOqnW']")).click();
 				driver.findElement(By.xpath("//div[contains(text(),'Краснодарский кр.')]")).click();
 				String costKr = cost("//h3[@class='ui-title ui-title_form ui-title_center ui-title_size_s MobileOperatorFormFieldTitle__title_2awZp mobileOperatorProductCalculatorSchema__amountTitle_6kgKn']");
-				if (costKr == costM1) {
+				if (costM1.equals(costKr)) {
 					System.out.println("Почему-то цены равны");
 				}
 			}
 		}
-		packageSelectoin();
+		Select.chooseFromListForCalls(driver, "//span[contains(text(),'Безлимитные минуты')]");
+		Select.choseFromListForInternet(driver, "//span[contains(text(),'Безлимитный интернет')]");
+		CheckBox.markModemMode(driver);
+		CheckBox.markUnlimitedSms(driver);
 		String costKr1 = cost("//h3[@class='ui-title ui-title_form ui-title_center ui-title_size_s MobileOperatorFormFieldTitle__title_2awZp mobileOperatorProductCalculatorSchema__amountTitle_6kgKn']");
 		driver.findElement(By.xpath("//div[@class='MvnoRegionConfirmation__title_DOqnW']")).click();
 		driver.findElement(By.xpath("//div[contains(text(),'Москва и Московская обл.')]")).click();
-		packageSelectoin();
+		Select.chooseFromListForCalls(driver, "//span[contains(text(),'Безлимитные минуты')]");
+		Select.choseFromListForInternet(driver, "//span[contains(text(),'Безлимитный интернет')]");
+		CheckBox.markModemMode(driver);
+		CheckBox.markUnlimitedSms(driver);
 		String costM2 = cost("//h3[@class='ui-title ui-title_form ui-title_center ui-title_size_s MobileOperatorFormFieldTitle__title_2awZp mobileOperatorProductCalculatorSchema__amountTitle_6kgKn']");
-		if(costKr1 == costM2)
-			System.out.println("Почему-то цены равны");
+		if(!costKr1.equals(costM2))
+			System.out.println("Почему-то цены не равны");
 	}
 
 	@Test
-	public void test3()throws Exception{
+	public void test3(){
 		driver.get("https://www.tinkoff.ru/mobile-operator/tariffs/");
 		driver.findElement(By.xpath("//span[@class='MvnoRegionConfirmation__option_v9PfP']")).click();
-		driver.findElement(By.xpath("//body//div[@class='UIFormWrapper__container_1TIK8']//div[@data-qa-file='UIFormWrapper']//div[@data-qa-file='UIFormWrapper']//div[2]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[2]")).click();
-		Actions actions1 = new Actions(driver);
-		actions1.moveToElement(driver.findElement(By.xpath("//span[@class='ui-select__title-flex-text'][contains(text(),'0 минут')]")))
-				.click()
-				.perform();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//div[@class='ui-form__fieldset ui-form__fieldset_inline ui-form__fieldset_column-mob']//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[2]")).click();
-		Actions actions2 = new Actions(driver);
-		actions2.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'0 ГБ')]")))
-				.click()
-				.perform();
-		driver.findElement(By.xpath("//div[@class='CheckboxSet__root_3OLWA']//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]")).click();
-		driver.findElement(By.xpath("//div[@class='CheckboxSet__checkboxSet_1aOBh']//div[1]//div[2]//div[1]//div[1]//div[1]")).click();
-		Thread.sleep(3000);
+		//xpath такой бесконечный, потому что другими способами 0 минут никак не выбирается
+		String xpath = "//div[contains(@class, 'ui-dropdown-field-list ui-dropdown-field-list__opened')]/div[contains(@class, 'ui-dropdown-field-list__item')][1]/div[contains(@class, 'ui-dropdown-field-list__item-event-handler')]/div[contains(@class, 'ui-dropdown-field-list__item-view ui-select__option_with-subtext_right-side')]/span[contains(@class, 'ui-dropdown-field-list__item-text')]";
+		Select.chooseFromListForCalls(driver, xpath );
+		Select.choseFromListForInternet(driver, "//span[contains(text(),'0 ГБ')]");
+		CheckBox.markMessengers(driver);
+		CheckBox.markSocialNetworks(driver);
 		String costFact = cost("//h3[@class='ui-title ui-title_form ui-title_center ui-title_size_s MobileOperatorFormFieldTitle__title_2awZp mobileOperatorProductCalculatorSchema__amountTitle_6kgKn']");
 		String costExpect = "Общая цена: 0 \u20BD";
-		if(costExpect!=costFact)
+		if(!costExpect.equals(costFact)) {
 			System.out.println("почему-то не 0");
+			System.out.println(costFact);
+		}
+		try {
+			driver.findElement(By.xpath("//div[@class='LoaderRound__container_no-background_GvpfD LoaderRound__container_coverParent_2-_fi']")).isEnabled();
+		}
+		catch (Exception e){
+			System.out.println("кнопка не активна");
+		}
 
 	}
+
+	protected String cost(String xpath){
+		return driver.findElement(By.xpath(xpath)).getText();
+	}
+
+
 
 }
