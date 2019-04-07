@@ -5,7 +5,6 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class BaseRunner {
